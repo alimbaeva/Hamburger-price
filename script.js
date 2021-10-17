@@ -66,7 +66,8 @@ class Hamburger {
             case 'майонезом':
                 this.siSum -= 20;
                 this.sizeKall -= 5;
-                this.getToppings.replace(' майонезом', '');
+                this.getToppings = this.getToppings.replace(' майонезом', '');
+                // this.getToppings.replace(' майонезом', '');
                 break;
         }
     }
@@ -99,6 +100,7 @@ class Hamburger {
 }
 
 let users = new Hamburger('большой', 'картофелем');
+users.getSize()
 users.addTopping('майонезом');
-users.removeTopping('майонезом');
+// users.removeTopping('майонезом');
 console.log(users.getStuffing());
