@@ -61,13 +61,12 @@ class Hamburger {
             case 'приправой':
                 this.siSum -= 15;
                 this.sizeKall -= 0;
-                this.getToppings.replace(' приправой', '');
+                this.getToppings = this.getToppings.replace(' приправой', '');
                 break;
             case 'майонезом':
                 this.siSum -= 20;
                 this.sizeKall -= 5;
                 this.getToppings = this.getToppings.replace(' майонезом', '');
-                // this.getToppings.replace(' майонезом', '');
                 break;
         }
     }
